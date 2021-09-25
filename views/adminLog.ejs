@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>log In Form</title>
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <form action="/admin" method="POST">
+        <div class="container">
+            <h1>login</h1>
+            <div class="mb-3">
+                <label for="studentName" class="form-label">student Name</label>
+                <input type="text" name="studentName" id="studentName" class="form-control" placeholder=""
+                    aria-describedby="studentNamr">
+                <small id="studentNamr" class="text-muted">enter student name</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="registration" class="form-label">student Registration number</label>
+                <input type="text" name="registration" id="registration" class="form-control" placeholder=""
+                    aria-describedby="reg">
+                <small id="reg" class="text-muted">enter registration number</small>
+            </div>
+            <button class="btn btn-success text-capitalize">log in</button>
+        </div>
+        </form>
+</body>
+
+</html>

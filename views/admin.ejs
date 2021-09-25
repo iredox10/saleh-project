@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>admin-page</title>
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %> 
+    <div class="container-fluid text-white bg-success position-sticky top-0">
+        <h1>admin page</h1>
+    </div>
+    <div class="container">
+        <% students.forEach(student=>{ %>
+            <table class="table table-bordered text-capitalize text-center">
+                <tr>
+                    <th class="bg-dark text-white">surname</th>
+                    <th class="bg-dark text-white">first name</th>
+                    <th class="bg-dark text-white">registration number</th>
+                    <th class="bg-dark text-white">state</th>
+                    <th class="bg-dark text-white">nationality</th>
+                    <th class="bg-dark text-white">gender</th>
+                    <th class="bg-dark text-white">level</th>
+                    <th class="bg-dark text-white">birth date</th>
+                    <th class="bg-dark text-white">department</th>
+                    <th class="bg-dark text-white">duration</th>
+                    <th class="bg-dark text-white">year</th>
+                    <th class="bg-dark text-white">password</th>
+                    <th class="bg-dark text-white">clear</th>
+                </tr>
+                <tr>
+                    <td>
+                        <%= student.surName %>
+                    </td>
+                    <td>
+                        <%= student.firstName %>
+                    </td>
+                    <td>
+                        <%= student.regNumber %>
+                    </td>
+                    <td>
+                        <%= student.state %>
+                    </td>
+                    <td>
+                        <%= student.nationality %>
+                    </td>
+                    <td>
+                        <%= student.gender %>
+                    </td>
+                    <td>
+                        <%= student.level %>
+                    </td>
+                    <td>
+                        <%= student.birthDate %>
+                    </td>
+                    <td>
+                        <%= student.department %>
+                    </td>
+                    <td>
+                        <%= student.duration %>
+                    </td>
+                    <td>
+                        <%= student.year %>
+                    </td>
+                    <td>
+                        <%= student.password %>
+                    </td>
+                    <td class="d-flex gap-1">
+                        <a href="<%= student.id %> " class="btn btn-success">clearance</a>
+                        <form action="/<%= student.id %>?_method=DELETE " method="POST">
+                        <button class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <% }) %>
+    </div>
+</body>
+
+</html>

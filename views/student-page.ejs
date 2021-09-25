@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= student.firstName %> page </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %> 
+    <div class="container-fluid bg-success text-white text-capitalize d-flex justify-content-between">
+    <h1><%= student.firstName %> <%= student.surName %>  dashbord </h1>
+    <h1><%= student.regNumber %></h1>
+</div>
+<h1 class="mt-2">student information</h1>
+<div class="container-fluid text-capitalize d-flex justify-content-start g-4 ">
+            <div class="info me-5">
+                <p class="fw-bold"> surname: <span class="lead ms-2"><%= student.surName %></span></p>
+                <p class="fw-bold" class="fw-bold">first name: <span class="lead ms-2"><%= student.firstName %></span></p>
+                <p class="fw-bold">state of origin:<span class="lead ms-2"><%= student.state %></span></p>
+                <p class="fw-bold">nationality:<span class="lead ms-2"><%= student.nationality %></span></p>
+                <p class="fw-bold">gender:<span class="lead ms-2"><%= student.gender %></span></p>
+            </div>
+            <div class="info">
+                <p class="fw-bold">level:<span class="lead ms-2"><%= student.level %></span></p>
+                <p class="fw-bold">birth date:<span class="lead ms-2"><%= student.birthDate %></span></p>
+                <p class="fw-bold">department:<span class="lead ms-2"><%= student.department %></span></p>
+                <p class="fw-bold">duration:<span class="lead ms-2"><%= student.duration %></span></p>
+                <p class="fw-bold">year:<span class="lead ms-2"><%= student.year %></span></p>
+            </div>
+
+        </div>
+
+        <a href="/clearance/<%= student.id %> " class="btn btn-outline-success ms-1 text-capitalize">clearance page</a>
+</body>
+</html>

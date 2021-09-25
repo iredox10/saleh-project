@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title><%= student.surName %> clearance</title>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %> 
+    <div class="container-fluid bg-success text-white text-capitalize">
+    <h1> <%= student.surName %> <%= student.firstName %> clearance page</h1>
+    </div>
+    <div class="container-lg-fluid">
+        <h2 class="text-capitalize text-center">this is to certify that <span class="fw-bold"> <%= student.surName %>  <%= student.firstName %> <%= student.lastName %></span>  has successfully done  clearance in all respective offices and department. which are as follows:</h2>
+        <div class="dept">
+            <h1 class="text-capitalize bg-info text-white">department</h1>
+            <h3>H.O.D: <span class="fw-bold">cleared</span></h3>
+            <h3>Accountant: <span class="fw-bold">cleared</span></h3>
+            <h3>Student officer: <span class="fw-bold">cleared</span></h3>
+            <h3>co-ordinator: <span class="fw-bold">cleared</span></h3>
+        </div>
+
+        <div class="admin">
+            <h1 class="text-capitalize bg-info text-white">admin</h1>
+            <h3>Project supervisor: <span class="fw-bold">cleared</span></h3>
+            <h3>Project co-ordinator: <span class="fw-bold">cleared</span></h3>
+            <h3>Chief Examination officer: <span class="fw-bold">cleared</span></h3>
+        </div>
+
+    </div>
+</body>
+</html>

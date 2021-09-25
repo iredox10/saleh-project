@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration page</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-fluid d-flex justify-content-between p-2 position-sticky top-0 bg-white shadow-sm">
+    <div class="logo">
+      <img src="" alt="school-logo">
+    </div>
+    <ul class="nav nav-pills text-capitalize">
+      <li class="nav-item mx-1">
+        <a class="nav-link" href="/">home</a>
+      </li>
+      <li class="nav-item mx-1">
+        <a class="nav-link" href="/">about us</a>
+      </li>
+      <li class="nav-item mx-1">
+        <a class="nav-link " href="./logInForm.html">log in</a>
+      </li>
+    </ul>
+  </div>
+  
+  <form action="/registration" method="POST">
+    <div class="container text-capitalize my-3">
+        <h1 class="text-capitalize">regeister now</h1>
+    <div class="mb-3">
+      <label for="surname" class="form-label">suranme</label>
+      <input type="text" name="surName" id="surname" class="form-control" placeholder="" aria-describedby="suranme">
+      <small id="suranme" class="text-muted">enter surname</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="firstName" class="form-label">first name</label>
+      <input type="text" name="firstName" id="firstName" class="form-control" placeholder="" aria-describedby="firstname">
+      <small id="firstname" class="text-muted">enter first name</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="lastName" class="form-label">last name</label>
+      <input class="form-control" name="lastName" id="lastName" type="text" placeholder="" aria-label="last name">
+    </div>
+
+    <div class="mb-3">
+      <label for="regNo" cNlass="form-label">Registration number</label>
+      <input type="text" name="regNo" id="regNo" class="form-control" placeholder="" aria-describedby="regNO">
+      <small id="regNO" class="text-muted">enter your registration number</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="state" class="form-label">state of origin</label>
+      <input type="text" name="state" id="state" class="form-control" placeholder="" aria-describedby="state">
+      <small id="state" class="text-muted">enter state of origin</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="nationality" class="form-label">Nationality</label>
+      <input type="text" name="nationality" id="nationality" class="form-control" placeholder="" aria-describedby="nationality">
+      <small id="nationality" class="text-muted">enter your nationality</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="gender" class="w-100">select gender</label>
+      <label for="male" class="form-label">male</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="female">female</label>
+      <input type="radio" name="gender" id="female"  value="female">
+    </div>
+
+    <div class="mb-3">
+      <label for="level" class="form-label">level</label>
+      <input type="number" name="level" id="level" class="form-control" placeholder="" aria-describedby="level">
+      <small id="level" class="text-muted">enter you level</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="birth" class="form-label">birth date</label>
+      <input type="date" name="birth" id="birth" class="form-control" placeholder="" aria-describedby="birth">
+      <small id="birth" class="text-muted">enter your birthday</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="dept" class="form-label">Department</label>
+      <input type="text" name="dept" id="dept" class="form-control" placeholder="" aria-describedby="dept">
+      <small id="dept" class="text-muted">enter your department</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="duration" class="form-label">duration</label>
+      <input type="text" name="duration" id="duration" class="form-control" placeholder="" aria-describedby="duration">
+      <small id="duration" class="text-muted">enter duration</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="year" class="form-label">year</label>
+      <input type="number" name="year" id="year" class="form-control" placeholder="" aria-describedby="year">
+      <small id="year" class="text-muted">enter year</small>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">pasword</label>
+      <input type="password" name="password" id="password" class="form-control" placeholder="" aria-describedby="passwar">
+      <small id="passwar" class="text-muted">enter password</small>
+    </div>
+    <button class="btn btn-success form-control">Register</button>
+    </div>
+    </form>
+</body>
+</html>
